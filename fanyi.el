@@ -249,6 +249,7 @@
   ;; Set these variables to nil, it's handled by ourselves.
   (setq-local outline-minor-mode-cycle nil)
   (setq-local outline-minor-mode-highlight nil)
+  (setq-local outline-minor-mode-use-buttons nil)
   ;; Make it foldable.
   (setq-local outline-regexp "^#+")
   (setq-local outline-minor-mode t)
