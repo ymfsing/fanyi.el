@@ -104,8 +104,7 @@
 (defcustom fanyi-providers '(fanyi-haici-provider
                              fanyi-etymon-provider
                              fanyi-longman-provider
-                             fanyi-youdao-thesaurus-provider
-                             fanyi-libre-provider)
+                             fanyi-youdao-thesaurus-provider)
   "The providers used by `fanyi-dwim'."
   :type '(repeat fanyi-base-service)
   :initialize #'custom-initialize-set
