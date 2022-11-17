@@ -311,11 +311,8 @@ Typically it can be a list of strings or \"riched\" strings."))
                                                                                                       (list (dom-texts node "") 'button (dom-texts node "")))
                                                                                                      ((dom-by-class node "REFHWD")
                                                                                                       (list (dom-texts node "") 'face 'italic))
-                                                                                                     ((dom-by-class node "BOOKFILM")
-                                                                                                      (dom-texts node ""))
-                                                                                                     ((dom-by-class node "FULLFORM")
-                                                                                                      (dom-texts node ""))
-                                                                                                     (t (user-error "Unimplemented. %s" (pp-to-string node)))))
+                                                                                                     ;; XXX pitfall here, see #33
+                                                                                                     (t (dom-texts node ""))))
                                                                                         (_ (user-error "Unimplemented. %s" (pp-to-string node)))))
                                                                                     (dom-children (dom-by-class sense "^\\(DEF\\)$"))))
                                                                      ;; Crossref.
